@@ -6,6 +6,6 @@ module.exports = async (m, args) => {
         return;
     }
 
-    await m.client.party.me.setCrowns(crowns);
+    await m.client.party.me.setCosmeticStats(crowns);
     await console.log(`Set the crowns to ${crowns}!`);
 };
