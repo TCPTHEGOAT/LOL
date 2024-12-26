@@ -8,6 +8,6 @@ module.exports = async (m, args) => {
     return;
   }
 
-  await m.client.party.me.setPickaxe(pickaxe.id, undefined, getCosmeticPath(pickaxe.path));
+  await m.client.party.me.setPickaxe(pickaxe.id, [], getCosmeticPath(pickaxe.path));
   await console.log(`Set the pickaxe to ${pickaxe.name}!`);
 };
