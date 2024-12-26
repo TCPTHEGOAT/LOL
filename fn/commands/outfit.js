@@ -8,6 +8,6 @@ module.exports = async (m, args) => {
     return;
   }
 
-  await m.client.party.me.setOutfit(skin.id, undefined, undefined, getCosmeticPath(skin.path));
+  await m.client.party.me.setOutfit(skin.id, [], [], getCosmeticPath(skin.path));
   await console.log(`Set the skin to ${skin.name}!`);
 };
