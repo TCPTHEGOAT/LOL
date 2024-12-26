@@ -19,10 +19,7 @@ const handleCommand = require('./utils/party');
     const options = {
         platform: "WIN",
         keepAliveInterval: 30,
-        auth: { 
-          auth 
-          authClient: "fortniteAndroidGameClient" 
-        },
+        auth,
       };
 
     const client = new Client(options);
