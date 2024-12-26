@@ -8,6 +8,6 @@ module.exports = async (m, args) => {
     return;
   }
 
-  await m.client.party.me.setBackpack(backpack.id, undefined, getCosmeticPath(backpack.path));
+  await m.client.party.me.setBackpack(backpack.id, [], getCosmeticPath(backpack.path));
   await console.log(`Set the pickaxe to ${backpack.name}!`);
 };
